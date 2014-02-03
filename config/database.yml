@@ -25,7 +25,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: postgres://opcuwxjukhbixv:99fJeZgex6ANNbSTmMk-nc7U0O@ec2-54-204-40-140.compute-1.amazonaws.com:5432/dekre5inde59mn
+  database: redmine_production
   pool: 5
-  username: opcuwxjukhbixv
-  password: 99fJeZgex6ANNbSTmMk-nc7U0O
+  username: postgres
+  password: 
