@@ -85,6 +85,11 @@ GEM
       activesupport (= 3.2.16)
       bundler (~> 1.0)
       railties (= 3.2.16)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.2)
+    rails_stdout_logging (0.0.3)
     railties (3.2.16)
       actionpack (= 3.2.16)
       activesupport (= 3.2.16)
@@ -93,6 +98,7 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.1.1)
+    rb-readline (0.5.1)
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (2.3.0)
@@ -148,6 +154,8 @@ DEPENDENCIES
   pg
   rack-openid
   rails (= 3.2.16)
+  rails_12factor
+  rb-readline
   rdoc (>= 2.4.2)
   redcarpet (~> 2.3.0)
   rmagick (>= 2.0.0)
