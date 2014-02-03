@@ -7,7 +7,8 @@ gem "fastercsv", "~> 1.5.0", :platforms => [:mri_18, :mingw_18, :jruby]
 gem "builder", "3.0.0"
 gem "mime-types"
 gem "awesome_nested_set", "2.1.6"
-
+gem "pg"
+gem "activerecord-jdbcpostgresql-adapter"
 # Optional gem for LDAP authentication
 group :ldap do
   gem "net-ldap", "~> 0.3.1"
@@ -58,9 +59,6 @@ if File.exist?(database_file)
       when 'mysql'
         gem "mysql", "~> 2.8.1", :platforms => [:mri, :mingw]
         gem "activerecord-jdbcmysql-adapter", :platforms => :jruby
-      when /postgresql/
-        gem "pg"
-        gem "activerecord-jdbcpostgresql-adapter", :platforms => :jruby
       when /sqlite3/
         gem "sqlite3", :platforms => [:mri, :mingw]
         gem "activerecord-jdbcsqlite3-adapter", :platforms => :jruby
