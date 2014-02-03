@@ -145,7 +145,7 @@ DEPENDENCIES
   mime-types
   mocha (>= 0.14)
   net-ldap (~> 0.3.1)
-  pg (>= 0.11.0)
+  pg
   rack-openid
   rails (= 3.2.16)
   rdoc (>= 2.4.2)
