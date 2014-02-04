@@ -125,7 +125,6 @@ default:
 
 # specific configuration options for production environment
 # that overrides the default ones
-
 production:
   email_delivery:
     delivery_method: :smtp
